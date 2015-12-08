@@ -11,4 +11,3 @@ To reproduce:
 5. Run `python app.py &` to start the flask server in the background.
 6. `curl http://127.0.0.1:5001/test > /dev/null` to retrieve the GB of random test data and send it to /dev/null. Everything will be fine
 7. `curl http://127.0.0.1:5001/test | head -c 10` and watch the memory usage of the server balloon to roughly a gigabyte just *after* the command returns.
-8. You can also see that requesting the headers only will triggerthe bug using the `-I` option to curl: run `curl -I http://127.0.0.1:5001/test > /dev/null` and the server memory usage will increase.
