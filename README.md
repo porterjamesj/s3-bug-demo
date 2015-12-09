@@ -1,6 +1,6 @@
 # S3 bug demo
 
-A demo of the bug described in an upcoming blog post of mine.
+A demo of the bug described in [this blog post](http://jamesporter.me/2015/12/09/mysterious-memory-consumption.html).
 
 To reproduce:
 
